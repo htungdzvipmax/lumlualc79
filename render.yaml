@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: bocualc79
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: node bocualc79.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /data
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: TELETHON_API_ID
+        sync: false
+      - key: TELETHON_API_HASH
+        sync: false
+      - key: KEEP_ALIVE_URL
+        sync: false
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1

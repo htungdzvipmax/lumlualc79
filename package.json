@@ -1,0 +1,17 @@
+{
+  "name": "bocualc79",
+  "version": "2.1.0",
+  "description": "LC79 Auto Redeem Bot — optimized for Render free",
+  "main": "bocualc79.js",
+  "scripts": {
+    "start": "node bocualc79.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "node-telegram-bot-api": "^0.66.0",
+    "telegram": "^2.26.22"
+  }
+}
